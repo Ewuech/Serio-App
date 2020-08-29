@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/4001327f7f.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-container">
+          <a href="#"><i class="fas fa-bars"></i></a>
+          <h3 id="header-name">Project Management</h3>
+        </div>
+        <nav class="nav-bar">
+          <ul class="nav-bar-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="grid-container">
+        <div class="side-panel-container">
+          <h3 id="side-panel-header">Menu</h3>
+
+            <button class="smenu-btn" id="btn-1"><i class="fas fa-hammer"></i>  Sub Menu 1</button>
+        
+            <ul class="smenu" id="smenu1">
+              <li>Add Project</li>
+              <li>View Project</li>
+              <li>Delete Project</li>
+            </ul>
+            <button class="smenu-btn" id="btn-2"><i class="fas fa-shopping-cart"></i> Sub Menu 2</button>
+            <ul class="smenu" id="smenu2">
+              <li>Store 1</li>
+              <li>Store 2</li>
+              <li>Store 3</li>
+            </ul>
+        </div>
+        <div class="jumbotron">
+          <h2 id=jumbotron-header>Project Information</h2>
+
+          <div class="project-container">
+            <div class="info-header">
+              <h3 id="project-name">Project name</h3>
+              <div>
+                <button class="edit-project-btn"><i class="fas fa-pencil-alt"></i></button>
+                <button class="delete-project-btn"><i class="fas fa-trash-alt"></i></button>
+              </div>
+              
+
+            </div>
+
+            <div class="project-info-container">
+
+              <div class="project-info">
+                <div class="label">
+                  <label for="start-date">Start Date:</label>
+                  <label for="end-date">End Date:</label>
+                </div>
+                <div class="outputs">
+                  <output id="start-date">MM/DD/YYYY</output>
+                  <output id="end-date">MM/DD/YYYY</output>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="label">
+                  <label for="labor-cost">Labor cost:</label>
+                  <label for="total-cost">Amount:</label>
+                </div>
+                <div class="outputs">
+                  <output id="labor-date">$$$$.$$</output>
+                  <output id="total-date">$$$$.$$</output>
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <hr>
+
+            <table class="material-table">
+              <tr>
+                <th id="id">ID#</th>
+                <th id="material-name">NAME</th>
+                <th id="quantity">QUANTITY</th>
+                <th id="price">PRICE</th>
+                <th id="amount">AMOUNT</th>
+                <th></th>
+              </tr>
+
+              <tbody id="table-body">
+
+                <tr>
+                  <td>##</td>
+                  <td>Material Name</td>
+                  <td>##</td>
+                  <td>$$$$.$$</td>
+                  <td>$$$$.$$</td>
+                  <td><button class="edit-btn"><i class="far fa-edit"></i></button>
+                  <button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+                </tr>
+
+                <tr>
+                  <td>##</td>
+                  <td>Material Name</td>
+                  <td>##</td>
+                  <td>$$$$.$$</td>
+                  <td>$$$$.$$</td>
+                  <td><button class="edit-btn"><i class="far fa-edit"></i></button>
+                    <button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+                </tr>
+
+                <tr>
+                  <td>##</td>
+                  <td>Material Name</td>
+                  <td>##</td>
+                  <td>$$$$.$$</td>
+                  <td>$$$$.$$</td>
+                  <td><button class="edit-btn"><i class="far fa-edit"></i></button>
+                    <button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="material-footer">
+              <button id="add-material-btn"><i class="far fa-plus-square"></i><span>  Add Item</span></button>
+              <div id="material-total-container">
+                <div class="label">
+                  <label for="material-total">Total:</label>
+                </div>
+                <div class="outputs">
+                  <output id="material-total">$$$$.$$</output>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          
+
+        </div>
+      </div>
+      
+    </div>
+
+
+  </body>
+  <script src='app.js'></script>
+</html>

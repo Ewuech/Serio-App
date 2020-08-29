@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;400;500;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration:none;
+    font-family: Sora, sans-serif;
+}
+
+.header {
+    position: sticky;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    align-items: center; 
+    background: #1a8d5f; 
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-container a {
+    padding: 15px;
+    color:#ffffff;
+}
+.header-container a:hover {
+    background:#167b53;
+}
+
+#header-name {
+    color: #e8f4ef;
+    padding: 5px;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    padding: 10px;
+    color:#ffffff;
+}
+
+.nav-bar ul li {
+    display: flex;
+    padding: 7px;
+}
+
+.nav-bar ul li:hover {
+    background:#167b53;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+#side-panel-header {
+    text-align: left;
+    margin: 10px;
+    padding: 5px 0;
+}
+
+.side-panel-container {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.smenu-btn {
+    background:#d1e8df;
+    width: 100%;
+    border:none;
+    padding: 10px;
+    text-align: left;
+}
+
+.smenu {
+    background: #e8f3ef;
+    color: rgb(59, 55, 55, .75);
+    border-radius:3px;
+}
+
+.smenu li {
+    margin-left: 25px;
+    padding: 5px;
+    transition: ease 0.4s;
+}
+
+.smenu li:hover {
+    cursor: pointer;
+    color:#238d60;
+    margin-left: 7px;
+    border-left:#239165 5px solid;
+    transition: 0.4s ease;
+}
+
+.info-header {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.edit-project-btn {
+    border: none;
+    background:#9fcbb8;
+    color:#238d60;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.delete-project-btn {
+    border: none;
+    background:#ecb1b1;
+    color:rgba(233, 75, 75, 0.932);
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.jumbotron {
+    background: #f4f6fa;
+    height: 100vh;
+}
+
+.project-info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#jumbotron-header {
+    margin: 10px;
+}
+
+.project-container {
+    margin: 10px;
+    padding: 10px;
+    background:white;
+
+}
+
+#project-name {
+    padding: 10px 0;
+}
+
+.project-info {
+    padding: 10px 0;
+    border-right: solid grey 1px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.label {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    color:rgb(59, 55, 55, .75);
+    padding:5px;
+}
+
+.outputs {
+    font-size: 17px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.material-table{
+    margin-top: 10px;
+    width: 100%;
+    border-bottom: green solid 1px;
+    
+}
+
+.material-table th {
+    background:rgba(231, 231, 231, 0.644);
+    text-align: left;
+    padding: 7px;
+}
+
+td {
+    padding: 5px;
+}
+
+#table-body tr:nth-child(even) {
+    background:rgba(231, 231, 231, 0.644);
+}
+
+#table-body tr:hover {
+    outline: auto;
+}
+
+#table-body tr td:last-child {
+    text-align: center;
+}
+
+.edit-btn {
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    border:none;
+    background: #bfdfd3;
+    color: #238d60;
+}
+
+.delete-btn {
+    border-radius: 5px;
+    padding: 5px;
+    border:none;
+    background: #ffece5;
+    color: #e6995e;
+}
+
+.material-footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#material-total-container {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+#add-material-btn{
+    border: solid grey 1px;
+    padding: 5px 20px;
+    background: none;
+    color:grey;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+#add-material-btn:hover {
+    background: #1a8d5f;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
