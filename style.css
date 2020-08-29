@@ -24,6 +24,18 @@
     align-items: center;
 }
 
+#side-panel-btn {
+    border: none;
+    padding: 15px;
+    background: #1a8d5f;
+    color: white;
+}
+
+#side-panel-btn:hover {
+    background:#167b53;
+    cursor: pointer;
+}
+
 .header-container a {
     padding: 15px;
     color:#ffffff;
@@ -56,9 +68,8 @@
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-auto-rows: minmax(100px, auto);
+    display: flex;
+    overflow: hidden;
 }
 
 #side-panel-header {
@@ -68,8 +79,12 @@
 }
 
 .side-panel-container {
-    padding-left: 5px;
-    padding-right: 5px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    overflow: hidden;
+    outline: auto;
 }
 
 .smenu-btn {
@@ -125,7 +140,13 @@
 .jumbotron {
     background: #f4f6fa;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    outline: auto;
+    overflow: hidden;
 }
+
 
 .project-info-container {
     display: grid;
@@ -188,7 +209,7 @@ td {
 }
 
 #table-body tr:nth-child(even) {
-    background:rgba(231, 231, 231, 0.644);
+    background:rgba(231, 231, 231, 1);
 }
 
 #table-body tr:hover {
@@ -202,15 +223,17 @@ td {
 .edit-btn {
     border-radius: 5px;
     margin-right: 5px;
-    padding: 5px;
     border:none;
     background: #bfdfd3;
     color: #238d60;
 }
 
+.edit-btn i, .delete-btn i {
+    padding: 10px;
+}
+
 .delete-btn {
     border-radius: 5px;
-    padding: 5px;
     border:none;
     background: #ffece5;
     color: #e6995e;
@@ -242,9 +265,22 @@ td {
     color: white;
 }
 
+[contenteditable="true"] {
+    background: #e6995e;
+}
 
+[contenteditable="true"]:focus {
+    filter: grayscale(100%);
+    background: rgb(83, 72, 72);
+}
 
+[editing = "false"] {
+    color: darkgray;
+}
 
+/* .editing {
+    filter: blur(0px);
+} */
 
 
 

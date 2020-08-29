@@ -11,11 +11,12 @@
 
     <title>Hello, world!</title>
   </head>
+
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="header-container">
-          <a href="#"><i class="fas fa-bars"></i></a>
+          <button onclick="toggleSidePanel()" id="side-panel-btn"><i class="fas fa-bars"></i></button>
           <h3 id="header-name">Project Management</h3>
         </div>
         <nav class="nav-bar">
@@ -132,7 +133,7 @@
             </table>
             
             <div class="material-footer">
-              <button id="add-material-btn"><i class="far fa-plus-square"></i><span>  Add Item</span></button>
+              <button onclick="addMaterial()" id="add-material-btn"><i class="far fa-plus-square"></i><span>  Add Item</span></button>
               <div id="material-total-container">
                 <div class="label">
                   <label for="material-total">Total:</label>
